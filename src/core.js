@@ -1,9 +1,12 @@
-
+// N IScroll Constructor function.
 function IScroll (el, options) {
+	// N Returns the first Element within the document that matches the specified selector, or group of selectors.
 	this.wrapper = typeof el == 'string' ? document.querySelector(el) : el;
+	// N Node.children is a read-only property that returns a live HTMLCollection of the child elements of Node.
 	this.scroller = this.wrapper.children[0];
 	this.scrollerStyle = this.scroller.style;		// cache style for better performance
 
+	// N A banch of options
 	this.options = {
 
 // INSERT POINT: OPTIONS
